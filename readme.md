@@ -36,7 +36,7 @@ To get going we need to set up a basic Express server (see this week's notes for
 full details).
 
 * Run `npm init` in the directory
-* Install express, ejs, body-parser, express-ejs-layouts, pg via npm
+* Install express, ejs, express-ejs-layouts, pg via npm
 * Create an index.js file
 * Setup a basic Express server with a root route
 
