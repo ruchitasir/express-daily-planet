@@ -32,7 +32,7 @@ At the end of this deliverable, you will have
 
 ### Setting up the Express App
 
-To get going we need to set up a basic Express server (see today's notes for
+To get going we need to set up a basic Express server (see this week's notes for
 full details).
 
 * Run `npm init` in the directory
