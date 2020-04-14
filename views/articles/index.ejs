@@ -1,0 +1,14 @@
+<h1>Articles collection</h1>
+<a class="results" href="/">
+    <button class="btnResult"> &larr; Back Home  </button>
+    </a>
+<a href="/articles/new">add articles</a>
+<div>
+<% allArticles.forEach(a=>{ %> 
+    <h2> Title: <%= a.title %>   </h2>
+    <h3> Content: <%= a.content %> </h3>
+    <h3> Author: <%= a.author %>   </h3>
+    <hr>
+<% }) %> 
+
+</div>

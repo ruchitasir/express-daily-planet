@@ -1,0 +1,27 @@
+{
+  "name": "express-daily-planet",
+  "version": "1.0.0",
+  "description": "![Daily Planet](http://blogs.smithsonianmag.com/design/files/2013/06/first-daily-planet1.jpg)",
+  "main": "indexMain.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruchitasir/express-daily-planet.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ruchitasir/express-daily-planet/issues"
+  },
+  "homepage": "https://github.com/ruchitasir/express-daily-planet#readme",
+  "dependencies": {
+    "ejs": "^3.0.2",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "pg": "^8.0.2",
+    "sequelize": "^5.21.6"
+  }
+}
