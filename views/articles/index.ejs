@@ -8,6 +8,10 @@
     <h2> Title: <%= a.title %>   </h2>
     <h3> Content: <%= a.content %> </h3>
     <h3> Author: <%= a.author %>   </h3>
+    <form method="POST" action="/articles/?_method=DELETE">
+        <input type="text" name="id" value ="<%=a.id%> ">
+        <button type="submit">Delete</button>
+    </form>
     <hr>
 <% }) %> 
 

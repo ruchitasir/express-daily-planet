@@ -2,9 +2,11 @@
 let express = require('express')
 let layouts = require('express-ejs-layouts')
 let db = require('./models')
+let methodOverride = require('method-override')
 // creata an app instance
 let app = express()
 
+app.use(methodOverride('_method'))
 // set template language to ejs
 app.set('view engine','ejs')
 //Tell express to use the layout modules
@@ -25,6 +27,8 @@ app.get('/', function(req, res) {
  app.get('/site/contact', function(req, res) {
     res.render('site/contact');
  })
+
+
 
 app.get('/articles', function(req, res) {
     db.articles.findAll()
@@ -61,6 +65,14 @@ app.post('/articles', function(req, res) {
         console.log('Fields are empty')
     }
  });  
+
+ app.delete('/articles',(req,res)=>{
+     db.articles.destroy({
+         where: {id: req.body.id}
+     }).then(deletedArt=>{
+         res.redirect('/articles')
+     })
+ })
 
  app.get('/articles/:id',(req,res)=>{
      console.log(req.params.id);
